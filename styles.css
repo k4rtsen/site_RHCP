@@ -2,6 +2,7 @@
 body{
   display: block;
   background: linear-gradient(to top left, powderblue, pink);
+  line-height: 1;
 }
 
 /*Заголовок*/
@@ -79,6 +80,12 @@ h1{
   }
   
 /*Верстка*/
+.sod{
+  float: left;
+  margin: 5px;
+  margin-right: 30px;
+  font-size: 18px;
+}
 .about{
   position: absolute;
   right: 45%;
@@ -109,3 +116,30 @@ footer {
   border-top: 5px solid rgba(34,34,34,.2);
   width: 100%;
  }
+ /*Состав*/
+ .holder{
+  position: relative;
+  width:300px;
+  height:400px;
+  margin: 10px auto;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to top, transparent 0%, black 100%);
+  border-image-slice: 1;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+}
+.block{
+  position:absolute;
+  height: 10%;
+  width: 100%;
+  left:0;
+  bottom:0;
+  right:0;
+  top:0;
+  background:rgba(255,255,255, 0.7);
+  padding:5px;
+  display:none;
+}
+.holder:hover .block{
+  display:block;
+}
