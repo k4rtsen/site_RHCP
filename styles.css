@@ -379,17 +379,22 @@ audio{
 .album{
   position: relative;
   width: 100%;
-  max-width: 720px;
+  /*max-width: 720px;*/
   height: 100%;
   max-height: auto;
   overflow: hidden;
+  border-bottom: 5px solid rgba(34, 34, 34, .2);
 }
 
 .album img{
   float: right;
-  padding: 10px;
+  padding-top: 25px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-180%, 0%);
 }
 
 .album .sounds{
   text-align: left;
+  padding-left: 10px;
 }
